@@ -1,0 +1,259 @@
+{
+  "release_date": "2026-11-13",
+  "sources": [
+    {
+      "source": "baseline_common.py",
+      "source_sha256": "31b3f3b9ca6a0921d6b8b1e62536c4d471ad775a4745d2f34f489aad010534f3",
+      "release": "baseline_common.py",
+      "release_sha256": "31b3f3b9ca6a0921d6b8b1e62536c4d471ad775a4745d2f34f489aad010534f3",
+      "edits": []
+    },
+    {
+      "source": "run_six_baselines.py",
+      "source_sha256": "eacc142121018dd20241f73cf1ac688be884b29a2069afcd6114c6ff39a20382",
+      "release": "run_six_baselines.py",
+      "release_sha256": "eacc142121018dd20241f73cf1ac688be884b29a2069afcd6114c6ff39a20382",
+      "edits": []
+    },
+    {
+      "source": "analyze_experiment_data.py",
+      "source_sha256": "959fb4e1478f14c77235ce4b3d2bd35ef86fc59c990ee0d53d392ce9cc7027c1",
+      "release": "analyze_experiment_data.py",
+      "release_sha256": "959fb4e1478f14c77235ce4b3d2bd35ef86fc59c990ee0d53d392ce9cc7027c1",
+      "edits": []
+    },
+    {
+      "source": "qwen3_8b_rag_formal_server/baseline_common.py",
+      "source_sha256": "31b3f3b9ca6a0921d6b8b1e62536c4d471ad775a4745d2f34f489aad010534f3",
+      "release": "qwen3_8b_rag_formal_server/baseline_common.py",
+      "release_sha256": "31b3f3b9ca6a0921d6b8b1e62536c4d471ad775a4745d2f34f489aad010534f3",
+      "edits": []
+    },
+    {
+      "source": "qwen3_8b_rag_formal_server/run_qwen3_8b_rag.py",
+      "source_sha256": "a99e5b00a8ab80bc1dc33b22831037646dd8274b931c79803efbac1f87e008a3",
+      "release": "qwen3_8b_rag_formal_server/run_qwen3_8b_rag.py",
+      "release_sha256": "a99e5b00a8ab80bc1dc33b22831037646dd8274b931c79803efbac1f87e008a3",
+      "edits": []
+    },
+    {
+      "source": "qwen3_8b_rag_formal_server/build_definition_rag_kb.py",
+      "source_sha256": "adac15bb9b47d630876ec1dbe15ed183b69da380f3c7b84330b700941ad92164",
+      "release": "qwen3_8b_rag_formal_server/build_definition_rag_kb.py",
+      "release_sha256": "adac15bb9b47d630876ec1dbe15ed183b69da380f3c7b84330b700941ad92164",
+      "edits": []
+    },
+    {
+      "source": "qwen3_8b_rag_formal_server/evaluate_definition_rag.py",
+      "source_sha256": "d048f0211e066acb5d1770cdff806fddc4ad32ab4fb27b26d4ddd3191faebd38",
+      "release": "qwen3_8b_rag_formal_server/evaluate_definition_rag.py",
+      "release_sha256": "d048f0211e066acb5d1770cdff806fddc4ad32ab4fb27b26d4ddd3191faebd38",
+      "edits": []
+    },
+    {
+      "source": "qwen3_8b_rag_formal_server/evaluate_supplementary_baselines.py",
+      "source_sha256": "5fc04363b200e8e25e8132c85305688ccbc2ed76a63d6adc880d9e0e6e4d991c",
+      "release": "qwen3_8b_rag_formal_server/evaluate_supplementary_baselines.py",
+      "release_sha256": "1e5837b7804a7cb032ab0a8e925d378ae676154aaa0d1b4043c1dca4ec4ef089",
+      "edits": [
+        "Corrected D2 display label only; metric functions unchanged"
+      ]
+    },
+    {
+      "source": "补充评测_指标整合/evaluate_added_models.py",
+      "source_sha256": "6cb632ea9ab31c9945a38ee5c14e70b41d95dfbfea65fcc09cb102a0dc8c262d",
+      "release": "补充评测_指标整合/evaluate_added_models.py",
+      "release_sha256": "6cb632ea9ab31c9945a38ee5c14e70b41d95dfbfea65fcc09cb102a0dc8c262d",
+      "edits": []
+    },
+    {
+      "source": "补充人工评测/analyze_human_evaluation.py",
+      "source_sha256": "04769009ddecbd5db487e516defe47188889ca359caba48a9584f14a2cf1dce0",
+      "release": "补充人工评测/analyze_human_evaluation.py",
+      "release_sha256": "b34d54517f0d267cabf7a24c196d009c5b495328650fdb3848b26c739c106ada",
+      "edits": [
+        "CLI defaults point to real-rating filenames and 10000 resamples; statistical functions unchanged"
+      ]
+    },
+    {
+      "source": "补充人工评测/audit_and_collect_real_ratings.py",
+      "source_sha256": "1acfd986c4915cc58527395e01e612dbc923712fd86b430e3601dfb7d144dcb3",
+      "release": "补充人工评测/audit_and_collect_real_ratings.py",
+      "release_sha256": "1acfd986c4915cc58527395e01e612dbc923712fd86b430e3601dfb7d144dcb3",
+      "edits": []
+    },
+    {
+      "source": "模型污染测试/utils_contamination.py",
+      "source_sha256": "ec9d5d9e1773cca86c8f3ee215fa1771d78215b4976fe22a5ce9fe6aad67ce82",
+      "release": "模型污染测试/utils_contamination.py",
+      "release_sha256": "8b461a3c43e4757f6fd81f23b9597fa8d558f2f1a4af83fb1ff0d716b8965280",
+      "edits": []
+    },
+    {
+      "source": "模型污染测试/build_A_structured_contamination.py",
+      "source_sha256": "75501d2ef4d05678898fca3ed33845e58618f70343907e857268f7ca8dafd64f",
+      "release": "模型污染测试/build_A_structured_contamination.py",
+      "release_sha256": "75501d2ef4d05678898fca3ed33845e58618f70343907e857268f7ca8dafd64f",
+      "edits": []
+    },
+    {
+      "source": "模型污染测试/build_contamination_dataset_all.py",
+      "source_sha256": "014521e79fcf1e3a4b01483200f5cba96316c782b5846155f27583683d2fc536",
+      "release": "模型污染测试/build_contamination_dataset_all.py",
+      "release_sha256": "014521e79fcf1e3a4b01483200f5cba96316c782b5846155f27583683d2fc536",
+      "edits": []
+    },
+    {
+      "source": "模型污染测试_统计分析/analyze_contamination_results.py",
+      "source_sha256": "48fef37998a409394105ec7cfd855f584c459f7e4c2b87123dd89e7cba58092c",
+      "release": "模型污染测试_统计分析/analyze_contamination_results.py",
+      "release_sha256": "48fef37998a409394105ec7cfd855f584c459f7e4c2b87123dd89e7cba58092c",
+      "edits": []
+    },
+    {
+      "source": "原始数据处理结果及过程/十三经辞典_clean_excel/cross_task_overlap_audit.py",
+      "source_sha256": "5f8a10cbfa30abef486d0cb0d658bb921c83d81937ecc98c935f036d8dbb8450",
+      "release": "原始数据处理结果及过程/十三经辞典_clean_excel/cross_task_overlap_audit.py",
+      "release_sha256": "5f8a10cbfa30abef486d0cb0d658bb921c83d81937ecc98c935f036d8dbb8450",
+      "edits": []
+    },
+    {
+      "source": "样本量与置信区间统计说明/analyze_sample_size_and_uncertainty.py",
+      "source_sha256": "9d21d92e80321794f8f42d1d97e8ce2d74908b2953cdb756bace4991d1716071",
+      "release": "样本量与置信区间统计说明/analyze_sample_size_and_uncertainty.py",
+      "release_sha256": "9d21d92e80321794f8f42d1d97e8ce2d74908b2953cdb756bace4991d1716071",
+      "edits": []
+    },
+    {
+      "source": "OCR质量控制与数据处理流程统计/analyze_ocr_quality_control.py",
+      "source_sha256": "e1e608847c735fe96e31de25fe80d7010694db8ee20b5ccdfa278c691d155d2a",
+      "release": "OCR质量控制与数据处理流程统计/analyze_ocr_quality_control.py",
+      "release_sha256": "e1e608847c735fe96e31de25fe80d7010694db8ee20b5ccdfa278c691d155d2a",
+      "edits": []
+    },
+    {
+      "source": "论文图表更新_20模型/generate_paper_figures.py",
+      "source_sha256": "c89ceeabfc3c2de9c34a34e623d4c1f3ab77642595806224610c2a24066f573c",
+      "release": "论文图表更新_20模型/generate_paper_figures.py",
+      "release_sha256": "c89ceeabfc3c2de9c34a34e623d4c1f3ab77642595806224610c2a24066f573c",
+      "edits": []
+    },
+    {
+      "source": "论文图表更新_20模型_最新版论文风格/generate_figures_latest_style.py",
+      "source_sha256": "e766e50c761381155a36b8a9f578d9a5baf2a397eb8add889c51ab13d2c60bd8",
+      "release": "论文图表更新_20模型_最新版论文风格/generate_figures_latest_style.py",
+      "release_sha256": "d736e98e599f3756fccded51592af370bc062f0e107e95a594212256977923ea",
+      "edits": [
+        "SFT figure inputs read from exported numeric CSV rather than private workbooks"
+      ]
+    }
+  ],
+  "numerical_exports": [
+    {
+      "source": "论文图表更新_20模型/图表数据/20模型_ROUGE.csv",
+      "release": "论文图表更新_20模型/图表数据/20模型_ROUGE.csv",
+      "rows": 80,
+      "removed_provenance_columns": [
+        "数据来源"
+      ]
+    },
+    {
+      "source": "论文图表更新_20模型/图表数据/20模型_六任务热力图得分.csv",
+      "release": "论文图表更新_20模型/图表数据/20模型_六任务热力图得分.csv",
+      "rows": 20,
+      "removed_provenance_columns": []
+    },
+    {
+      "source": "论文图表更新_20模型/图表数据/20模型_准确率.csv",
+      "release": "论文图表更新_20模型/图表数据/20模型_准确率.csv",
+      "rows": 160,
+      "removed_provenance_columns": [
+        "数据来源"
+      ]
+    },
+    {
+      "source": "论文图表更新_20模型/图表数据/20模型_准确率_Wilson95CI.csv",
+      "release": "论文图表更新_20模型/图表数据/20模型_准确率_Wilson95CI.csv",
+      "rows": 160,
+      "removed_provenance_columns": [
+        "数据来源",
+        "说明"
+      ]
+    },
+    {
+      "source": "论文图表更新_20模型/图表数据/20模型_语义相似度.csv",
+      "release": "论文图表更新_20模型/图表数据/20模型_语义相似度.csv",
+      "rows": 80,
+      "removed_provenance_columns": [
+        "数据来源"
+      ]
+    },
+    {
+      "source": "论文图表更新_20模型/图表数据/人工评测_KrippendorffAlpha.csv",
+      "release": "论文图表更新_20模型/图表数据/人工评测_KrippendorffAlpha.csv",
+      "rows": 12,
+      "removed_provenance_columns": []
+    },
+    {
+      "source": "论文图表更新_20模型/图表数据/人工评测_Spearman相关与Bootstrap95CI.csv",
+      "release": "论文图表更新_20模型/图表数据/人工评测_Spearman相关与Bootstrap95CI.csv",
+      "rows": 18,
+      "removed_provenance_columns": []
+    },
+    {
+      "source": "论文图表更新_20模型/图表数据/补充基线与RAG图表数据.csv",
+      "release": "论文图表更新_20模型/图表数据/补充基线与RAG图表数据.csv",
+      "rows": 13,
+      "removed_provenance_columns": []
+    },
+    {
+      "source": "模型污染测试_统计分析/结果文件/01_来源组总体统计.csv",
+      "release": "data/summaries/contamination/01_来源组总体统计.csv",
+      "rows": 3,
+      "removed_provenance_columns": []
+    },
+    {
+      "source": "模型污染测试_统计分析/结果文件/02_模型_来源组统计.csv",
+      "release": "data/summaries/contamination/02_模型_来源组统计.csv",
+      "rows": 33,
+      "removed_provenance_columns": []
+    },
+    {
+      "source": "模型污染测试_统计分析/结果文件/03_模型_提示类型统计.csv",
+      "release": "data/summaries/contamination/03_模型_提示类型统计.csv",
+      "rows": 33,
+      "removed_provenance_columns": []
+    },
+    {
+      "source": "模型污染测试_统计分析/结果文件/04_来源组_提示类型统计.csv",
+      "release": "data/summaries/contamination/04_来源组_提示类型统计.csv",
+      "rows": 9,
+      "removed_provenance_columns": []
+    },
+    {
+      "source": "模型污染测试_统计分析/结果文件/07_阈值敏感性分析.csv",
+      "release": "data/summaries/contamination/07_阈值敏感性分析.csv",
+      "rows": 15,
+      "removed_provenance_columns": []
+    },
+    {
+      "source": "原指标计算结果/all_Accuracy.xlsx",
+      "release": "data/summaries/sft_accuracy.csv",
+      "rows": 8,
+      "filter": "Qwen3-sft and 0-shot/5-shot only"
+    },
+    {
+      "source": "原指标计算结果/all_rouge.xlsx",
+      "release": "data/summaries/sft_rouge.csv",
+      "rows": 4,
+      "filter": "Qwen3-sft and 0-shot/5-shot only"
+    },
+    {
+      "source": "原指标计算结果/all_similarity.xlsx",
+      "release": "data/summaries/sft_similarity.csv",
+      "rows": 4,
+      "filter": "Qwen3-sft and 0-shot/5-shot only"
+    }
+  ],
+  "note": "Relative archival source paths only. No credentials, manuscript text or private absolute paths are included."
+}

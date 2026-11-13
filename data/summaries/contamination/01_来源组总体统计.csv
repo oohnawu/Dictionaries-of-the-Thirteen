@@ -1,0 +1,4 @@
+﻿group,group_label,outputs,blank_outputs,unique_samples,exact_reproductions,contained_reproductions,near_verbatim_outputs,high_overlap_unique_samples,mean_reference_coverage,median_reference_coverage,p95_reference_coverage,maximum_reference_coverage,mean_edit_similarity,maximum_edit_similarity,usable_outputs,exact_rate,near_verbatim_rate
+A,DTC entries,1650,5,50,0,0,0,0,0.21165408894837143,0.1875,0.4642857142857143,0.75,0.08983399806206506,0.5,1645,0.0,0.0
+B,HDC entries,990,1,30,1,1,4,4,0.2480909014888992,0.2,0.6349999999999999,1.0,0.12305112700896706,1.0,989,0.0010111223458038423,0.004044489383215369
+C,Public classical texts,660,1,20,18,157,201,18,0.4822677014511926,0.33271202236719477,1.0,1.0,0.30730993181714256,1.0,659,0.027314112291350532,0.30500758725341426

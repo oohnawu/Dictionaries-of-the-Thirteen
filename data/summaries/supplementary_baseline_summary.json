@@ -1,0 +1,566 @@
+{
+  "evaluator_version": "supplementary-baselines-v1",
+  "reused_accuracy": {
+    "metrics": {
+      "radical_openbook": {
+        "label": "部首open-book lookup",
+        "items": 200,
+        "correct": 195,
+        "accuracy": 0.975,
+        "accuracy_percent": 97.5,
+        "surface_correct_for_audit": 195,
+        "surface_accuracy_for_audit": 0.975,
+        "normalization": "Unicode NFKC + OpenCC t2s + whitespace removal",
+        "method": "openbook-dictionary-majority"
+      },
+      "pinyin_openbook": {
+        "label": "拼音open-book lookup",
+        "items": 200,
+        "correct": 183,
+        "accuracy": 0.915,
+        "accuracy_percent": 91.5,
+        "surface_correct_for_audit": 183,
+        "surface_accuracy_for_audit": 0.915,
+        "normalization": "Unicode NFKC + OpenCC t2s + whitespace removal",
+        "method": "openbook-dictionary-majority"
+      },
+      "fanqie_openbook": {
+        "label": "反切open-book lookup",
+        "items": 200,
+        "correct": 183,
+        "accuracy": 0.915,
+        "accuracy_percent": 91.5,
+        "surface_correct_for_audit": 176,
+        "surface_accuracy_for_audit": 0.88,
+        "normalization": "Unicode NFKC + OpenCC t2s + whitespace removal",
+        "method": "openbook-dictionary-majority"
+      },
+      "pos_majority": {
+        "label": "词性多数基线",
+        "items": 200,
+        "correct": 100,
+        "accuracy": 0.5,
+        "accuracy_percent": 50.0,
+        "surface_correct_for_audit": 96,
+        "surface_accuracy_for_audit": 0.48,
+        "normalization": "Unicode NFKC + OpenCC t2s + whitespace removal",
+        "method": "headword-majority-pos-strict"
+      },
+      "pos_context_bm25": {
+        "label": "上下文词性BM25",
+        "items": 200,
+        "correct": 120,
+        "accuracy": 0.6,
+        "accuracy_percent": 60.0,
+        "surface_correct_for_audit": 115,
+        "surface_accuracy_for_audit": 0.575,
+        "normalization": "Unicode NFKC + OpenCC t2s + whitespace removal",
+        "method": "bm25-top1-pos-nearduplicate-filtered-headword-first"
+      }
+    }
+  },
+  "reused_d0": {
+    "metrics": {
+      "context_d0": {
+        "label": "D0：Qwen3-8B 语境理解 0-shot（原论文）",
+        "task": "语境理解",
+        "rouge_1_f1": 0.08279686,
+        "rouge_2_f1": 0.00462,
+        "rouge_l_f1": 0.053823,
+        "rouge_avg_f1": 0.04707995333333334,
+        "rouge_avg_f1_percent": 4.707995333333334,
+        "sbert_cosine": 0.511357156857848,
+        "sbert_cosine_percent": 51.1357156857848,
+        "items": 200
+      },
+      "definition_d0": {
+        "label": "D0：Qwen3-8B 释义生成 0-shot（原论文）",
+        "task": "释义生成",
+        "rouge_1_f1": 0.04254169,
+        "rouge_2_f1": 0.000302,
+        "rouge_l_f1": 0.030601,
+        "rouge_avg_f1": 0.02448156333333333,
+        "rouge_avg_f1_percent": 2.448156333333333,
+        "sbert_cosine": 0.371299753375351,
+        "sbert_cosine_percent": 37.1299753375351,
+        "items": 200
+      }
+    }
+  },
+  "semantic_reports": {
+    "definition_bm25": {
+      "target_id": "definition_bm25",
+      "task": "释义能力",
+      "evaluated_items": 200,
+      "groups": {
+        "all": {
+          "count": 200,
+          "rouge_1_f1": 0.10785086,
+          "rouge_1_f1_percent": 10.785086,
+          "rouge_2_f1": 0.00541128,
+          "rouge_2_f1_percent": 0.541128,
+          "rouge_l_f1": 0.08653192,
+          "rouge_l_f1_percent": 8.653192,
+          "rouge_avg_f1": 0.06659802,
+          "rouge_avg_f1_percent": 6.659802,
+          "sbert_cosine": 0.53183317,
+          "sbert_cosine_percent": 53.183317
+        },
+        "no_evidence": {
+          "count": 10,
+          "rouge_1_f1": 0.0,
+          "rouge_1_f1_percent": 0.0,
+          "rouge_2_f1": 0.0,
+          "rouge_2_f1_percent": 0.0,
+          "rouge_l_f1": 0.0,
+          "rouge_l_f1_percent": 0.0,
+          "rouge_avg_f1": 0.0,
+          "rouge_avg_f1_percent": 0.0,
+          "sbert_cosine": 0.47496974,
+          "sbert_cosine_percent": 47.496974
+        },
+        "retrieval_hit": {
+          "count": 190,
+          "rouge_1_f1": 0.11352722,
+          "rouge_1_f1_percent": 11.352722,
+          "rouge_2_f1": 0.00569608,
+          "rouge_2_f1_percent": 0.569608,
+          "rouge_l_f1": 0.09108623,
+          "rouge_l_f1_percent": 9.108623,
+          "rouge_avg_f1": 0.07010318,
+          "rouge_avg_f1_percent": 7.010318,
+          "sbert_cosine": 0.53482598,
+          "sbert_cosine_percent": 53.482598
+        },
+        "scope:unknown": {
+          "count": 200,
+          "rouge_1_f1": 0.10785086,
+          "rouge_1_f1_percent": 10.785086,
+          "rouge_2_f1": 0.00541128,
+          "rouge_2_f1_percent": 0.541128,
+          "rouge_l_f1": 0.08653192,
+          "rouge_l_f1_percent": 8.653192,
+          "rouge_avg_f1": 0.06659802,
+          "rouge_avg_f1_percent": 6.659802,
+          "sbert_cosine": 0.53183317,
+          "sbert_cosine_percent": 53.183317
+        }
+      },
+      "metric_definition": {
+        "rouge_1_2": "multiset n-gram overlap F1",
+        "rouge_l": "longest-common-subsequence F1",
+        "rouge_avg": "mean(ROUGE-1 F1, ROUGE-2 F1, ROUGE-L F1)",
+        "aggregation": "per-item score, then macro average over 200 items",
+        "sbert": "cosine similarity after original extract_definition logic"
+      }
+    },
+    "context_bm25": {
+      "target_id": "context_bm25",
+      "task": "语境理解",
+      "evaluated_items": 200,
+      "groups": {
+        "all": {
+          "count": 200,
+          "rouge_1_f1": 0.32266215,
+          "rouge_1_f1_percent": 32.266215,
+          "rouge_2_f1": 0.24872454,
+          "rouge_2_f1_percent": 24.872454,
+          "rouge_l_f1": 0.32053618,
+          "rouge_l_f1_percent": 32.053618,
+          "rouge_avg_f1": 0.29730763,
+          "rouge_avg_f1_percent": 29.730763,
+          "sbert_cosine": 0.63981104,
+          "sbert_cosine_percent": 63.981104
+        },
+        "retrieval_hit": {
+          "count": 200,
+          "rouge_1_f1": 0.32266215,
+          "rouge_1_f1_percent": 32.266215,
+          "rouge_2_f1": 0.24872454,
+          "rouge_2_f1_percent": 24.872454,
+          "rouge_l_f1": 0.32053618,
+          "rouge_l_f1_percent": 32.053618,
+          "rouge_avg_f1": 0.29730763,
+          "rouge_avg_f1_percent": 29.730763,
+          "sbert_cosine": 0.63981104,
+          "sbert_cosine_percent": 63.981104
+        },
+        "scope:global-backoff": {
+          "count": 25,
+          "rouge_1_f1": 0.01671889,
+          "rouge_1_f1_percent": 1.671889,
+          "rouge_2_f1": 0.0,
+          "rouge_2_f1_percent": 0.0,
+          "rouge_l_f1": 0.01671889,
+          "rouge_l_f1_percent": 1.671889,
+          "rouge_avg_f1": 0.01114593,
+          "rouge_avg_f1_percent": 1.114593,
+          "sbert_cosine": 0.37645201,
+          "sbert_cosine_percent": 37.645201
+        },
+        "scope:same-headword": {
+          "count": 175,
+          "rouge_1_f1": 0.36636833,
+          "rouge_1_f1_percent": 36.636833,
+          "rouge_2_f1": 0.28425662,
+          "rouge_2_f1_percent": 28.425662,
+          "rouge_l_f1": 0.36393865,
+          "rouge_l_f1_percent": 36.393865,
+          "rouge_avg_f1": 0.33818787,
+          "rouge_avg_f1_percent": 33.818787,
+          "sbert_cosine": 0.67743376,
+          "sbert_cosine_percent": 67.743376
+        }
+      },
+      "metric_definition": {
+        "rouge_1_2": "multiset n-gram overlap F1",
+        "rouge_l": "longest-common-subsequence F1",
+        "rouge_avg": "mean(ROUGE-1 F1, ROUGE-2 F1, ROUGE-L F1)",
+        "aggregation": "per-item score, then macro average over 200 items",
+        "sbert": "cosine similarity after original extract_definition logic"
+      }
+    },
+    "definition_d2": {
+      "target_id": "definition_d2",
+      "task": "释义能力",
+      "evaluated_items": 200,
+      "groups": {
+        "all": {
+          "count": 200,
+          "rouge_1_f1": 0.21946148,
+          "rouge_1_f1_percent": 21.946148,
+          "rouge_2_f1": 0.02255142,
+          "rouge_2_f1_percent": 2.255142,
+          "rouge_l_f1": 0.16042258,
+          "rouge_l_f1_percent": 16.042258,
+          "rouge_avg_f1": 0.13414516,
+          "rouge_avg_f1_percent": 13.414516,
+          "sbert_cosine": 0.62000877,
+          "sbert_cosine_percent": 62.000877
+        },
+        "no_evidence": {
+          "count": 24,
+          "rouge_1_f1": 0.25816439,
+          "rouge_1_f1_percent": 25.816439,
+          "rouge_2_f1": 0.03786234,
+          "rouge_2_f1_percent": 3.786234,
+          "rouge_l_f1": 0.21527932,
+          "rouge_l_f1_percent": 21.527932,
+          "rouge_avg_f1": 0.17043535,
+          "rouge_avg_f1_percent": 17.043535,
+          "sbert_cosine": 0.64085354,
+          "sbert_cosine_percent": 64.085354
+        },
+        "retrieval_hit": {
+          "count": 176,
+          "rouge_1_f1": 0.21418381,
+          "rouge_1_f1_percent": 21.418381,
+          "rouge_2_f1": 0.02046357,
+          "rouge_2_f1_percent": 2.046357,
+          "rouge_l_f1": 0.15294212,
+          "rouge_l_f1_percent": 15.294212,
+          "rouge_avg_f1": 0.1291965,
+          "rouge_avg_f1_percent": 12.91965,
+          "sbert_cosine": 0.6171663,
+          "sbert_cosine_percent": 61.71663
+        },
+        "scope:no-evidence": {
+          "count": 24,
+          "rouge_1_f1": 0.25816439,
+          "rouge_1_f1_percent": 25.816439,
+          "rouge_2_f1": 0.03786234,
+          "rouge_2_f1_percent": 3.786234,
+          "rouge_l_f1": 0.21527932,
+          "rouge_l_f1_percent": 21.527932,
+          "rouge_avg_f1": 0.17043535,
+          "rouge_avg_f1_percent": 17.043535,
+          "sbert_cosine": 0.64085354,
+          "sbert_cosine_percent": 64.085354
+        },
+        "scope:same-headword-d2": {
+          "count": 175,
+          "rouge_1_f1": 0.21493153,
+          "rouge_1_f1_percent": 21.493153,
+          "rouge_2_f1": 0.02041724,
+          "rouge_2_f1_percent": 2.041724,
+          "rouge_l_f1": 0.15333988,
+          "rouge_l_f1_percent": 15.333988,
+          "rouge_avg_f1": 0.12956288,
+          "rouge_avg_f1_percent": 12.956288,
+          "sbert_cosine": 0.61884016,
+          "sbert_cosine_percent": 61.884016
+        },
+        "scope:simplified-headword-d2": {
+          "count": 1,
+          "rouge_1_f1": 0.08333333,
+          "rouge_1_f1_percent": 8.333333,
+          "rouge_2_f1": 0.02857143,
+          "rouge_2_f1_percent": 2.857143,
+          "rouge_l_f1": 0.08333333,
+          "rouge_l_f1_percent": 8.333333,
+          "rouge_avg_f1": 0.06507937,
+          "rouge_avg_f1_percent": 6.507937,
+          "sbert_cosine": 0.32424027,
+          "sbert_cosine_percent": 32.424027
+        }
+      },
+      "metric_definition": {
+        "rouge_1_2": "multiset n-gram overlap F1",
+        "rouge_l": "longest-common-subsequence F1",
+        "rouge_avg": "mean(ROUGE-1 F1, ROUGE-2 F1, ROUGE-L F1)",
+        "aggregation": "per-item score, then macro average over 200 items",
+        "sbert": "cosine similarity after original extract_definition logic"
+      }
+    },
+    "definition_d3": {
+      "target_id": "definition_d3",
+      "task": "释义能力",
+      "evaluated_items": 200,
+      "groups": {
+        "all": {
+          "count": 200,
+          "rouge_1_f1": 0.19109328,
+          "rouge_1_f1_percent": 19.109328,
+          "rouge_2_f1": 0.03820954,
+          "rouge_2_f1_percent": 3.820954,
+          "rouge_l_f1": 0.13296977,
+          "rouge_l_f1_percent": 13.296977,
+          "rouge_avg_f1": 0.12075753,
+          "rouge_avg_f1_percent": 12.075753,
+          "sbert_cosine": 0.56279921,
+          "sbert_cosine_percent": 56.279921
+        },
+        "no_evidence": {
+          "count": 24,
+          "rouge_1_f1": 0.24746014,
+          "rouge_1_f1_percent": 24.746014,
+          "rouge_2_f1": 0.03291505,
+          "rouge_2_f1_percent": 3.291505,
+          "rouge_l_f1": 0.19522841,
+          "rouge_l_f1_percent": 19.522841,
+          "rouge_avg_f1": 0.15853453,
+          "rouge_avg_f1_percent": 15.853453,
+          "sbert_cosine": 0.62610733,
+          "sbert_cosine_percent": 62.610733
+        },
+        "retrieval_hit": {
+          "count": 176,
+          "rouge_1_f1": 0.18340689,
+          "rouge_1_f1_percent": 18.340689,
+          "rouge_2_f1": 0.03893152,
+          "rouge_2_f1_percent": 3.893152,
+          "rouge_l_f1": 0.12447996,
+          "rouge_l_f1_percent": 12.447996,
+          "rouge_avg_f1": 0.11560612,
+          "rouge_avg_f1_percent": 11.560612,
+          "sbert_cosine": 0.55416629,
+          "sbert_cosine_percent": 55.416629
+        },
+        "scope:no-evidence": {
+          "count": 24,
+          "rouge_1_f1": 0.24746014,
+          "rouge_1_f1_percent": 24.746014,
+          "rouge_2_f1": 0.03291505,
+          "rouge_2_f1_percent": 3.291505,
+          "rouge_l_f1": 0.19522841,
+          "rouge_l_f1_percent": 19.522841,
+          "rouge_avg_f1": 0.15853453,
+          "rouge_avg_f1_percent": 15.853453,
+          "sbert_cosine": 0.62610733,
+          "sbert_cosine_percent": 62.610733
+        },
+        "scope:same-headword-d3": {
+          "count": 175,
+          "rouge_1_f1": 0.1842893,
+          "rouge_1_f1_percent": 18.42893,
+          "rouge_2_f1": 0.03915399,
+          "rouge_2_f1_percent": 3.915399,
+          "rouge_l_f1": 0.12502564,
+          "rouge_l_f1_percent": 12.502564,
+          "rouge_avg_f1": 0.11615631,
+          "rouge_avg_f1_percent": 11.615631,
+          "sbert_cosine": 0.55419875,
+          "sbert_cosine_percent": 55.419875
+        },
+        "scope:simplified-headword-d3": {
+          "count": 1,
+          "rouge_1_f1": 0.02898551,
+          "rouge_1_f1_percent": 2.898551,
+          "rouge_2_f1": 0.0,
+          "rouge_2_f1_percent": 0.0,
+          "rouge_l_f1": 0.02898551,
+          "rouge_l_f1_percent": 2.898551,
+          "rouge_avg_f1": 0.01932367,
+          "rouge_avg_f1_percent": 1.932367,
+          "sbert_cosine": 0.54848516,
+          "sbert_cosine_percent": 54.848516
+        }
+      },
+      "metric_definition": {
+        "rouge_1_2": "multiset n-gram overlap F1",
+        "rouge_l": "longest-common-subsequence F1",
+        "rouge_avg": "mean(ROUGE-1 F1, ROUGE-2 F1, ROUGE-L F1)",
+        "aggregation": "per-item score, then macro average over 200 items",
+        "sbert": "cosine similarity after original extract_definition logic"
+      }
+    },
+    "definition_d4": {
+      "target_id": "definition_d4",
+      "task": "释义能力",
+      "evaluated_items": 200,
+      "groups": {
+        "all": {
+          "count": 200,
+          "rouge_1_f1": 0.16955855,
+          "rouge_1_f1_percent": 16.955855,
+          "rouge_2_f1": 0.02945264,
+          "rouge_2_f1_percent": 2.945264,
+          "rouge_l_f1": 0.11624749,
+          "rouge_l_f1_percent": 11.624749,
+          "rouge_avg_f1": 0.10508623,
+          "rouge_avg_f1_percent": 10.508623,
+          "sbert_cosine": 0.57710952,
+          "sbert_cosine_percent": 57.710952
+        },
+        "no_evidence": {
+          "count": 24,
+          "rouge_1_f1": 0.2208926,
+          "rouge_1_f1_percent": 22.08926,
+          "rouge_2_f1": 0.02933174,
+          "rouge_2_f1_percent": 2.933174,
+          "rouge_l_f1": 0.17497402,
+          "rouge_l_f1_percent": 17.497402,
+          "rouge_avg_f1": 0.14173279,
+          "rouge_avg_f1_percent": 14.173279,
+          "sbert_cosine": 0.60895214,
+          "sbert_cosine_percent": 60.895214
+        },
+        "retrieval_hit": {
+          "count": 176,
+          "rouge_1_f1": 0.16255845,
+          "rouge_1_f1_percent": 16.255845,
+          "rouge_2_f1": 0.02946913,
+          "rouge_2_f1_percent": 2.946913,
+          "rouge_l_f1": 0.10823933,
+          "rouge_l_f1_percent": 10.823933,
+          "rouge_avg_f1": 0.10008897,
+          "rouge_avg_f1_percent": 10.008897,
+          "sbert_cosine": 0.57276735,
+          "sbert_cosine_percent": 57.276735
+        },
+        "scope:no-evidence": {
+          "count": 24,
+          "rouge_1_f1": 0.2208926,
+          "rouge_1_f1_percent": 22.08926,
+          "rouge_2_f1": 0.02933174,
+          "rouge_2_f1_percent": 2.933174,
+          "rouge_l_f1": 0.17497402,
+          "rouge_l_f1_percent": 17.497402,
+          "rouge_avg_f1": 0.14173279,
+          "rouge_avg_f1_percent": 14.173279,
+          "sbert_cosine": 0.60895214,
+          "sbert_cosine_percent": 60.895214
+        },
+        "scope:same-headword-d4": {
+          "count": 175,
+          "rouge_1_f1": 0.16332173,
+          "rouge_1_f1_percent": 16.332173,
+          "rouge_2_f1": 0.02963752,
+          "rouge_2_f1_percent": 2.963752,
+          "rouge_l_f1": 0.10869221,
+          "rouge_l_f1_percent": 10.869221,
+          "rouge_avg_f1": 0.10055049,
+          "rouge_avg_f1_percent": 10.055049,
+          "sbert_cosine": 0.57233203,
+          "sbert_cosine_percent": 57.233203
+        },
+        "scope:simplified-headword-d4": {
+          "count": 1,
+          "rouge_1_f1": 0.02898551,
+          "rouge_1_f1_percent": 2.898551,
+          "rouge_2_f1": 0.0,
+          "rouge_2_f1_percent": 0.0,
+          "rouge_l_f1": 0.02898551,
+          "rouge_l_f1_percent": 2.898551,
+          "rouge_avg_f1": 0.01932367,
+          "rouge_avg_f1_percent": 1.932367,
+          "sbert_cosine": 0.64894682,
+          "sbert_cosine_percent": 64.894682
+        }
+      },
+      "metric_definition": {
+        "rouge_1_2": "multiset n-gram overlap F1",
+        "rouge_l": "longest-common-subsequence F1",
+        "rouge_avg": "mean(ROUGE-1 F1, ROUGE-2 F1, ROUGE-L F1)",
+        "aggregation": "per-item score, then macro average over 200 items",
+        "sbert": "cosine similarity after original extract_definition logic"
+      }
+    },
+    "context_rag": {
+      "target_id": "context_rag",
+      "task": "语境理解",
+      "evaluated_items": 200,
+      "groups": {
+        "all": {
+          "count": 200,
+          "rouge_1_f1": 0.32820136,
+          "rouge_1_f1_percent": 32.820136,
+          "rouge_2_f1": 0.20662097,
+          "rouge_2_f1_percent": 20.662097,
+          "rouge_l_f1": 0.3217035,
+          "rouge_l_f1_percent": 32.17035,
+          "rouge_avg_f1": 0.28550861,
+          "rouge_avg_f1_percent": 28.550861,
+          "sbert_cosine": 0.68851826,
+          "sbert_cosine_percent": 68.851826
+        },
+        "retrieval_hit": {
+          "count": 200,
+          "rouge_1_f1": 0.32820136,
+          "rouge_1_f1_percent": 32.820136,
+          "rouge_2_f1": 0.20662097,
+          "rouge_2_f1_percent": 20.662097,
+          "rouge_l_f1": 0.3217035,
+          "rouge_l_f1_percent": 32.17035,
+          "rouge_avg_f1": 0.28550861,
+          "rouge_avg_f1_percent": 28.550861,
+          "sbert_cosine": 0.68851826,
+          "sbert_cosine_percent": 68.851826
+        },
+        "scope:global-backoff": {
+          "count": 25,
+          "rouge_1_f1": 0.14867854,
+          "rouge_1_f1_percent": 14.867854,
+          "rouge_2_f1": 0.05454545,
+          "rouge_2_f1_percent": 5.454545,
+          "rouge_l_f1": 0.13645632,
+          "rouge_l_f1_percent": 13.645632,
+          "rouge_avg_f1": 0.11322677,
+          "rouge_avg_f1_percent": 11.322677,
+          "sbert_cosine": 0.60606563,
+          "sbert_cosine_percent": 60.606563
+        },
+        "scope:same-headword": {
+          "count": 175,
+          "rouge_1_f1": 0.35384748,
+          "rouge_1_f1_percent": 35.384748,
+          "rouge_2_f1": 0.22834604,
+          "rouge_2_f1_percent": 22.834604,
+          "rouge_l_f1": 0.34816738,
+          "rouge_l_f1_percent": 34.816738,
+          "rouge_avg_f1": 0.3101203,
+          "rouge_avg_f1_percent": 31.01203,
+          "sbert_cosine": 0.70029721,
+          "sbert_cosine_percent": 70.029721
+        }
+      },
+      "metric_definition": {
+        "rouge_1_2": "multiset n-gram overlap F1",
+        "rouge_l": "longest-common-subsequence F1",
+        "rouge_avg": "mean(ROUGE-1 F1, ROUGE-2 F1, ROUGE-L F1)",
+        "aggregation": "per-item score, then macro average over 200 items",
+        "sbert": "cosine similarity after original extract_definition logic"
+      }
+    }
+  }
+}

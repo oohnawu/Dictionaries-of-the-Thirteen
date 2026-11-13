@@ -1,0 +1,127 @@
+{
+  "unique_evaluation_instances": 1200,
+  "formatted_prompt_records": 2400,
+  "files": [
+    {
+      "task": "radical recognition",
+      "original_task_label": "部首识别",
+      "prompting": "0-shot",
+      "file": "eval_data/json/部首识别/0-shot/部首识别_eval.json",
+      "instances": 200,
+      "unique_headwords": 200,
+      "sha256": "0503cced2d95a5af67528fef91beae43984cc4412f5262b8fece9762313e5e9f",
+      "copied_without_content_changes": true
+    },
+    {
+      "task": "radical recognition",
+      "original_task_label": "部首识别",
+      "prompting": "5-shot",
+      "file": "eval_data/json/部首识别/5-shot/部首识别_eval.json",
+      "instances": 200,
+      "unique_headwords": 200,
+      "sha256": "4938c2ac50a07a42a91f05f6538279561a8527b2a3803b3888c438ec41f06f9b",
+      "copied_without_content_changes": true
+    },
+    {
+      "task": "POS tagging",
+      "original_task_label": "词性识别",
+      "prompting": "0-shot",
+      "file": "eval_data/json/词性识别/0-shot/词性识别_eval.json",
+      "instances": 200,
+      "unique_headwords": 195,
+      "sha256": "4d3aeb48154eb6771f7fc98eb1c581e389c7b1a49550e120b977be6e912ac8ff",
+      "copied_without_content_changes": true
+    },
+    {
+      "task": "POS tagging",
+      "original_task_label": "词性识别",
+      "prompting": "5-shot",
+      "file": "eval_data/json/词性识别/5-shot/词性识别_eval.json",
+      "instances": 200,
+      "unique_headwords": 195,
+      "sha256": "4652b98f51156f8dc9df766f10774f80ef4141e7107befb772a55544121acf9f",
+      "copied_without_content_changes": true
+    },
+    {
+      "task": "pinyin annotation",
+      "original_task_label": "拼音注音",
+      "prompting": "0-shot",
+      "file": "eval_data/json/拼音注音/0-shot/拼音注音_eval.json",
+      "instances": 200,
+      "unique_headwords": 200,
+      "sha256": "8098447a180ef69a03f9894145dcba24ed1076c748b6694576ab5b6cc55d0ca3",
+      "copied_without_content_changes": true
+    },
+    {
+      "task": "pinyin annotation",
+      "original_task_label": "拼音注音",
+      "prompting": "5-shot",
+      "file": "eval_data/json/拼音注音/5-shot/拼音注音_eval.json",
+      "instances": 200,
+      "unique_headwords": 200,
+      "sha256": "ac45411f322db2d999ace45852c1c41b7918536837236d2b7ddc349a9d991d71",
+      "copied_without_content_changes": true
+    },
+    {
+      "task": "fanqie annotation",
+      "original_task_label": "反切注音",
+      "prompting": "0-shot",
+      "file": "eval_data/json/反切注音/0-shot/反切注音_eval.json",
+      "instances": 200,
+      "unique_headwords": 200,
+      "sha256": "698f92bb7696aa72681d1ecfb25308ce1de9d75d630afbc02ee36e13f0f2c34a",
+      "copied_without_content_changes": true
+    },
+    {
+      "task": "fanqie annotation",
+      "original_task_label": "反切注音",
+      "prompting": "5-shot",
+      "file": "eval_data/json/反切注音/5-shot/反切注音_eval.json",
+      "instances": 200,
+      "unique_headwords": 200,
+      "sha256": "5fbd9abb080ca45c13baff7131e7593451153d5e48441150de5972a777140375",
+      "copied_without_content_changes": true
+    },
+    {
+      "task": "definition generation",
+      "original_task_label": "释义能力",
+      "prompting": "0-shot",
+      "file": "eval_data/json/释义能力/0-shot/释义能力_eval.json",
+      "instances": 200,
+      "unique_headwords": 195,
+      "sha256": "3b574cedcc44bdc95ed23f8562220dffc648d92e8ba15aa1ae2519339770c3c9",
+      "copied_without_content_changes": true
+    },
+    {
+      "task": "definition generation",
+      "original_task_label": "释义能力",
+      "prompting": "5-shot",
+      "file": "eval_data/json/释义能力/5-shot/释义能力_eval.json",
+      "instances": 200,
+      "unique_headwords": 195,
+      "sha256": "9f1c79bb0fc36304c8bf4d7372d17d04cc80d0c26b42f1bd65b4f2f48d36b2d9",
+      "copied_without_content_changes": true
+    },
+    {
+      "task": "contextual sense disambiguation",
+      "original_task_label": "语境理解",
+      "prompting": "0-shot",
+      "file": "eval_data/json/语境理解/0-shot/语境理解_eval.json",
+      "instances": 200,
+      "unique_headwords": 195,
+      "sha256": "9e024bb2100263f6389a6596f7fd5abedaae599caf84d57aebc6c0dd25fbd8e6",
+      "copied_without_content_changes": true
+    },
+    {
+      "task": "contextual sense disambiguation",
+      "original_task_label": "语境理解",
+      "prompting": "5-shot",
+      "file": "eval_data/json/语境理解/5-shot/语境理解_eval.json",
+      "instances": 200,
+      "unique_headwords": 195,
+      "sha256": "75114912d5cba77e97f561ef226f4cb2932e77e99654bee2010bd1e5b1876892",
+      "copied_without_content_changes": true
+    }
+  ],
+  "rights": "Dataset public redistribution confirmed by the depositor on 2026-11-13; third-party text is not relicensed under MIT."
+}

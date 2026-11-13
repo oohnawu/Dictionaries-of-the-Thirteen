@@ -1,0 +1,16 @@
+﻿group,group_label,threshold,usable_outputs,matching_outputs,matching_rate,unique_matching_samples
+A,DTC entries,0.8,1645,0,0.0,0
+B,HDC entries,0.8,989,13,0.01314459049544995,7
+C,Public classical texts,0.8,659,228,0.34597875569044007,18
+A,DTC entries,0.85,1645,0,0.0,0
+B,HDC entries,0.85,989,8,0.008088978766430738,6
+C,Public classical texts,0.85,659,207,0.3141122913505311,18
+A,DTC entries,0.9,1645,0,0.0,0
+B,HDC entries,0.9,989,4,0.004044489383215369,4
+C,Public classical texts,0.9,659,201,0.30500758725341426,18
+A,DTC entries,0.95,1645,0,0.0,0
+B,HDC entries,0.95,989,3,0.003033367037411527,3
+C,Public classical texts,0.95,659,181,0.2746585735963581,16
+A,DTC entries,1.0,1645,0,0.0,0
+B,HDC entries,1.0,989,1,0.0010111223458038423,1
+C,Public classical texts,1.0,659,161,0.24430955993930198,15

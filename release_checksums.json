@@ -1,0 +1,374 @@
+{
+  "files": [
+    {
+      "path": ".env.example",
+      "bytes": 85,
+      "sha256": "1add7abb58404de34a96b975e0ceccc790758cfc4eb24f8ceecbec20ad2ca014"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 689,
+      "sha256": "4259d4835830dacf872dd3d36e98f1a5ebfc0466435eab3c033d7a76d932d7bc"
+    },
+    {
+      "path": "analyze_experiment_data.py",
+      "bytes": 15877,
+      "sha256": "959fb4e1478f14c77235ce4b3d2bd35ef86fc59c990ee0d53d392ce9cc7027c1"
+    },
+    {
+      "path": "audits/cross_task_overlap_audit.py",
+      "bytes": 38277,
+      "sha256": "5f8a10cbfa30abef486d0cb0d658bb921c83d81937ecc98c935f036d8dbb8450"
+    },
+    {
+      "path": "baseline_common.py",
+      "bytes": 30859,
+      "sha256": "31b3f3b9ca6a0921d6b8b1e62536c4d471ad775a4745d2f34f489aad010534f3"
+    },
+    {
+      "path": "baseline_config.json",
+      "bytes": 1929,
+      "sha256": "be5dd397b5811bf7989de69e64413b48d1e0b0aa06cdd3f7ec49a67287117007"
+    },
+    {
+      "path": "data/README.md",
+      "bytes": 1615,
+      "sha256": "6f6e8dc74978601759e47f14899b096baa3540eda1b28b3fb80e95975e02d5f5"
+    },
+    {
+      "path": "data/summaries/contamination/01_来源组总体统计.csv",
+      "bytes": 778,
+      "sha256": "e774a29225a93b2dcb289912a326aabfebebcae6e3448d972173da57123a06d1"
+    },
+    {
+      "path": "data/summaries/contamination/02_模型_来源组统计.csv",
+      "bytes": 5699,
+      "sha256": "f80f487569a46d24d24f2bec85bde121239a6b261f790fbaea5d657f17995ddc"
+    },
+    {
+      "path": "data/summaries/contamination/03_模型_提示类型统计.csv",
+      "bytes": 5179,
+      "sha256": "89a56bd2966b666f6b173d52f7c11f150b837a8713d0e32c8d0ddeb537abf07b"
+    },
+    {
+      "path": "data/summaries/contamination/04_来源组_提示类型统计.csv",
+      "bytes": 1773,
+      "sha256": "1b674d77556c6fa3ac8a89de7bd8ad709d0ad70d02a3749a5fc8836128205a91"
+    },
+    {
+      "path": "data/summaries/contamination/07_阈值敏感性分析.csv",
+      "bytes": 812,
+      "sha256": "32302ebdee379e8ee6fd993773efc4ccf61611868577a82bf583a37ce9029830"
+    },
+    {
+      "path": "data/summaries/human_evaluation_summary.json",
+      "bytes": 14243,
+      "sha256": "a8f17d5071fb6dde44c5316ebff2ae968aceb0b8d1fb163ec43449eda3700ed9"
+    },
+    {
+      "path": "data/summaries/sft_accuracy.csv",
+      "bytes": 385,
+      "sha256": "d525a2adfcbc8e7349c992861dcb95171737bd628ac9d2b44d1dc8d50a0f5606"
+    },
+    {
+      "path": "data/summaries/sft_rouge.csv",
+      "bytes": 485,
+      "sha256": "3599bdc12c1ba53656a96cb63786836508e9ad24a5f066130bd5a5cd1df8de9a"
+    },
+    {
+      "path": "data/summaries/sft_similarity.csv",
+      "bytes": 377,
+      "sha256": "4ad88f2d5bdc31ae9b33a07e77c92a30f7b9bd7801c8f951df7feb8122e8910c"
+    },
+    {
+      "path": "data/summaries/supplementary_baseline_summary.json",
+      "bytes": 20479,
+      "sha256": "2d17f9b659faa4b67a5fa11f67b4f810e5561fd0b627a515736c4066b01b5fbc"
+    },
+    {
+      "path": "data/testset_manifest.json",
+      "bytes": 4955,
+      "sha256": "b8e09ecd36fe40cf7d158f505801c39c29318815dcb33e9879a6e7e9bc39140e"
+    },
+    {
+      "path": "DATA_RIGHTS.md",
+      "bytes": 2367,
+      "sha256": "2040b272054d42a335717c423f8a778e1e2c723b79f92e537566010d1ce9729f"
+    },
+    {
+      "path": "docs/REPRODUCIBILITY.md",
+      "bytes": 2565,
+      "sha256": "b8cf6151de8e73f53b281d71e5e51051981bd41e312270097fd7e1a508820f2b"
+    },
+    {
+      "path": "docs/RESTRICTED_INPUTS.md",
+      "bytes": 1242,
+      "sha256": "74372d7b7d8c0a3cf9951e2f0d6859a7ac281f9575922e47f168c2d0bd02b4e5"
+    },
+    {
+      "path": "docs/SCORING.md",
+      "bytes": 2281,
+      "sha256": "d9d2c207bd7283664cf113f790c77b04cbe3f30a4b3eab64ad591ce58006da59"
+    },
+    {
+      "path": "docs/source_provenance.json",
+      "bytes": 11952,
+      "sha256": "26c950f57c29a567457692916f4cbbd04130dca0dacc9073fcf2120d893ba111"
+    },
+    {
+      "path": "docs/VALIDATION.md",
+      "bytes": 1845,
+      "sha256": "ec252b3282c8162e28b6757f3af73d5a7f8f0fd0ef26a2df9c2cae9e7f4e93ef"
+    },
+    {
+      "path": "eval_data/json/反切注音/0-shot/反切注音_eval.json",
+      "bytes": 66612,
+      "sha256": "698f92bb7696aa72681d1ecfb25308ce1de9d75d630afbc02ee36e13f0f2c34a"
+    },
+    {
+      "path": "eval_data/json/反切注音/5-shot/反切注音_eval.json",
+      "bytes": 111012,
+      "sha256": "5fbd9abb080ca45c13baff7131e7593451153d5e48441150de5972a777140375"
+    },
+    {
+      "path": "eval_data/json/拼音注音/0-shot/拼音注音_eval.json",
+      "bytes": 34404,
+      "sha256": "8098447a180ef69a03f9894145dcba24ed1076c748b6694576ab5b6cc55d0ca3"
+    },
+    {
+      "path": "eval_data/json/拼音注音/5-shot/拼音注音_eval.json",
+      "bytes": 71404,
+      "sha256": "ac45411f322db2d999ace45852c1c41b7918536837236d2b7ddc349a9d991d71"
+    },
+    {
+      "path": "eval_data/json/词性识别/0-shot/词性识别_eval.json",
+      "bytes": 66829,
+      "sha256": "4d3aeb48154eb6771f7fc98eb1c581e389c7b1a49550e120b977be6e912ac8ff"
+    },
+    {
+      "path": "eval_data/json/词性识别/5-shot/词性识别_eval.json",
+      "bytes": 159429,
+      "sha256": "4652b98f51156f8dc9df766f10774f80ef4141e7107befb772a55544121acf9f"
+    },
+    {
+      "path": "eval_data/json/语境理解/0-shot/语境理解_eval.json",
+      "bytes": 72659,
+      "sha256": "9e024bb2100263f6389a6596f7fd5abedaae599caf84d57aebc6c0dd25fbd8e6"
+    },
+    {
+      "path": "eval_data/json/语境理解/5-shot/语境理解_eval.json",
+      "bytes": 183859,
+      "sha256": "75114912d5cba77e97f561ef226f4cb2932e77e99654bee2010bd1e5b1876892"
+    },
+    {
+      "path": "eval_data/json/部首识别/0-shot/部首识别_eval.json",
+      "bytes": 55804,
+      "sha256": "0503cced2d95a5af67528fef91beae43984cc4412f5262b8fece9762313e5e9f"
+    },
+    {
+      "path": "eval_data/json/部首识别/5-shot/部首识别_eval.json",
+      "bytes": 88604,
+      "sha256": "4938c2ac50a07a42a91f05f6538279561a8527b2a3803b3888c438ec41f06f9b"
+    },
+    {
+      "path": "eval_data/json/释义能力/0-shot/释义能力_eval.json",
+      "bytes": 141426,
+      "sha256": "3b574cedcc44bdc95ed23f8562220dffc648d92e8ba15aa1ae2519339770c3c9"
+    },
+    {
+      "path": "eval_data/json/释义能力/5-shot/释义能力_eval.json",
+      "bytes": 236426,
+      "sha256": "9f1c79bb0fc36304c8bf4d7372d17d04cc80d0c26b42f1bd65b4f2f48d36b2d9"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 1087,
+      "sha256": "f9af8960f8b4ef7f6ce39ec79452ad8751e93501a1684d0c2550bb71b1c4b5a5"
+    },
+    {
+      "path": "OCR质量控制与数据处理流程统计/analyze_ocr_quality_control.py",
+      "bytes": 21577,
+      "sha256": "e1e608847c735fe96e31de25fe80d7010694db8ee20b5ccdfa278c691d155d2a"
+    },
+    {
+      "path": "qwen3_8b_rag_formal_server/baseline_common.py",
+      "bytes": 30859,
+      "sha256": "31b3f3b9ca6a0921d6b8b1e62536c4d471ad775a4745d2f34f489aad010534f3"
+    },
+    {
+      "path": "qwen3_8b_rag_formal_server/baseline_config.json",
+      "bytes": 2816,
+      "sha256": "548034a33ee1deb9cfeb0a6d31756c8bf1582cb0ba6ed37e08f9ed73e3f54903"
+    },
+    {
+      "path": "qwen3_8b_rag_formal_server/build_definition_rag_kb.py",
+      "bytes": 15656,
+      "sha256": "adac15bb9b47d630876ec1dbe15ed183b69da380f3c7b84330b700941ad92164"
+    },
+    {
+      "path": "qwen3_8b_rag_formal_server/evaluate_definition_rag.py",
+      "bytes": 14860,
+      "sha256": "d048f0211e066acb5d1770cdff806fddc4ad32ab4fb27b26d4ddd3191faebd38"
+    },
+    {
+      "path": "qwen3_8b_rag_formal_server/evaluate_supplementary_baselines.py",
+      "bytes": 32449,
+      "sha256": "1e5837b7804a7cb032ab0a8e925d378ae676154aaa0d1b4043c1dca4ec4ef089"
+    },
+    {
+      "path": "qwen3_8b_rag_formal_server/run_qwen3_8b_rag.py",
+      "bytes": 55613,
+      "sha256": "a99e5b00a8ab80bc1dc33b22831037646dd8274b931c79803efbac1f87e008a3"
+    },
+    {
+      "path": "README.md",
+      "bytes": 8982,
+      "sha256": "239e3e573511a30776cfc35d013a200af2997026c936ff684a6af8f547138fd0"
+    },
+    {
+      "path": "requirements/core.txt",
+      "bytes": 97,
+      "sha256": "576549becfe86ffd682dcb469a042a4aad1de6048b4ec2709a6643cec2ea4b46"
+    },
+    {
+      "path": "requirements/figures.txt",
+      "bytes": 31,
+      "sha256": "9eb48185bbf20fdbcb02f4958cc29be020fc799b2204ceda353fa6871a06c599"
+    },
+    {
+      "path": "requirements/rag-api.txt",
+      "bytes": 26,
+      "sha256": "ce4f1e3099713524c0b8285288c06798b9aa6336086762be34d3efea1e6ed6fa"
+    },
+    {
+      "path": "requirements/rag-local.txt",
+      "bytes": 76,
+      "sha256": "d23ae7abc376432669db4600c362ff4af6fda000d71eda7b88793d4220bfd6e5"
+    },
+    {
+      "path": "requirements/semantic.txt",
+      "bytes": 34,
+      "sha256": "254e8630d45e2f4046aaab48e47d9b999306aaa3211cc00e22e104e52bee1c6d"
+    },
+    {
+      "path": "run_six_baselines.py",
+      "bytes": 25200,
+      "sha256": "eacc142121018dd20241f73cf1ac688be884b29a2069afcd6114c6ff39a20382"
+    },
+    {
+      "path": "tests/test_release.py",
+      "bytes": 1910,
+      "sha256": "767e52c2918fc93e763105e7c0cb0547981311221aad400d42437dacdd211236"
+    },
+    {
+      "path": "tools/plot_supplementary.py",
+      "bytes": 1299,
+      "sha256": "c0bb32f8585f284ca9633b62510d13a7e486f61a8cca5bff44d28a3578748b8a"
+    },
+    {
+      "path": "tools/score_model_outputs.py",
+      "bytes": 5537,
+      "sha256": "6b3318825a3009c21cba63c095a42dc48ef18a58ff74b73558e2522e480a23a5"
+    },
+    {
+      "path": "tools/validate_release.py",
+      "bytes": 2321,
+      "sha256": "42fc3d83b969bbab335ef24307ea2bf3dc7850608d198f134e4f4a7720740e0f"
+    },
+    {
+      "path": "原始数据处理结果及过程/十三经辞典_clean_excel/cross_task_overlap_audit.py",
+      "bytes": 38277,
+      "sha256": "5f8a10cbfa30abef486d0cb0d658bb921c83d81937ecc98c935f036d8dbb8450"
+    },
+    {
+      "path": "样本量与置信区间统计说明/analyze_sample_size_and_uncertainty.py",
+      "bytes": 20048,
+      "sha256": "9d21d92e80321794f8f42d1d97e8ce2d74908b2953cdb756bace4991d1716071"
+    },
+    {
+      "path": "模型污染测试/build_A_structured_contamination.py",
+      "bytes": 40963,
+      "sha256": "75501d2ef4d05678898fca3ed33845e58618f70343907e857268f7ca8dafd64f"
+    },
+    {
+      "path": "模型污染测试/build_contamination_dataset_all.py",
+      "bytes": 71720,
+      "sha256": "014521e79fcf1e3a4b01483200f5cba96316c782b5846155f27583683d2fc536"
+    },
+    {
+      "path": "模型污染测试/utils_contamination.py",
+      "bytes": 2072,
+      "sha256": "8b461a3c43e4757f6fd81f23b9597fa8d558f2f1a4af83fb1ff0d716b8965280"
+    },
+    {
+      "path": "模型污染测试_统计分析/analyze_contamination_results.py",
+      "bytes": 14634,
+      "sha256": "48fef37998a409394105ec7cfd855f584c459f7e4c2b87123dd89e7cba58092c"
+    },
+    {
+      "path": "补充人工评测/analyze_human_evaluation.py",
+      "bytes": 19272,
+      "sha256": "b34d54517f0d267cabf7a24c196d009c5b495328650fdb3848b26c739c106ada"
+    },
+    {
+      "path": "补充人工评测/audit_and_collect_real_ratings.py",
+      "bytes": 17002,
+      "sha256": "1acfd986c4915cc58527395e01e612dbc923712fd86b430e3601dfb7d144dcb3"
+    },
+    {
+      "path": "补充评测_指标整合/evaluate_added_models.py",
+      "bytes": 31831,
+      "sha256": "6cb632ea9ab31c9945a38ee5c14e70b41d95dfbfea65fcc09cb102a0dc8c262d"
+    },
+    {
+      "path": "论文图表更新_20模型/generate_paper_figures.py",
+      "bytes": 26543,
+      "sha256": "c89ceeabfc3c2de9c34a34e623d4c1f3ab77642595806224610c2a24066f573c"
+    },
+    {
+      "path": "论文图表更新_20模型/图表数据/20模型_ROUGE.csv",
+      "bytes": 10306,
+      "sha256": "68b32db6b17038bf99627fa0fdcfe1eba5b62b10316cde30f4e2bcb40007980e"
+    },
+    {
+      "path": "论文图表更新_20模型/图表数据/20模型_六任务热力图得分.csv",
+      "bytes": 1593,
+      "sha256": "a3cd39035fd4e24c337a6a05a02438a8307ee11fbb943848e7ab2ac3264d1034"
+    },
+    {
+      "path": "论文图表更新_20模型/图表数据/20模型_准确率.csv",
+      "bytes": 10744,
+      "sha256": "9fc6eb324cbc5d0e82b2697bc270b894e5184a45d720eabfea92c883129e46b1"
+    },
+    {
+      "path": "论文图表更新_20模型/图表数据/20模型_准确率_Wilson95CI.csv",
+      "bytes": 16293,
+      "sha256": "92f206e8b3acc2e9b6fda0dd1c90f3db7e089a6c8b9591306e7f5d3eddd3ebfc"
+    },
+    {
+      "path": "论文图表更新_20模型/图表数据/20模型_语义相似度.csv",
+      "bytes": 7394,
+      "sha256": "06ab6107204fb9598a35900957f6c1bcfcd34332f8527b4f238fcf9ddc376e13"
+    },
+    {
+      "path": "论文图表更新_20模型/图表数据/人工评测_KrippendorffAlpha.csv",
+      "bytes": 1138,
+      "sha256": "a3c0daf89247675548b5f53d6fdafb0a298b0bd6d19e27c7b57c590f15e33be6"
+    },
+    {
+      "path": "论文图表更新_20模型/图表数据/人工评测_Spearman相关与Bootstrap95CI.csv",
+      "bytes": 2733,
+      "sha256": "148aaf71a29e6fd12189344aa25f211feaa82364c7f04d331f81e6395062c089"
+    },
+    {
+      "path": "论文图表更新_20模型/图表数据/补充基线与RAG图表数据.csv",
+      "bytes": 672,
+      "sha256": "9971f86510f71a011b03c5f089607925132f91af892411b49857e670ee654915"
+    },
+    {
+      "path": "论文图表更新_20模型_最新版论文风格/generate_figures_latest_style.py",
+      "bytes": 23076,
+      "sha256": "d736e98e599f3756fccded51592af370bc062f0e107e95a594212256977923ea"
+    }
+  ]
+}

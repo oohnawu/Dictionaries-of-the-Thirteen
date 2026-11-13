@@ -1,0 +1,433 @@
+{
+  "data_status": "REAL_HUMAN_RATING",
+  "consistency": [
+    {
+      "task": "语境理解",
+      "dimension": "semantic_correctness",
+      "krippendorff_alpha_ordinal": 0.3606999340391779,
+      "rating_count": 1500,
+      "mean": 3.332666666666667,
+      "std": 1.6679327191333455
+    },
+    {
+      "task": "语境理解",
+      "dimension": "completeness",
+      "krippendorff_alpha_ordinal": 0.43623298125149057,
+      "rating_count": 1500,
+      "mean": 3.4446666666666665,
+      "std": 1.556150663942566
+    },
+    {
+      "task": "语境理解",
+      "dimension": "conciseness",
+      "krippendorff_alpha_ordinal": 0.8170963994375048,
+      "rating_count": 1500,
+      "mean": 4.24,
+      "std": 1.1383028302404126
+    },
+    {
+      "task": "语境理解",
+      "dimension": "contextual_appropriateness",
+      "krippendorff_alpha_ordinal": 0.44701915510317836,
+      "rating_count": 1500,
+      "mean": 3.502,
+      "std": 1.5420752251430538
+    },
+    {
+      "task": "语境理解",
+      "dimension": "lexicographical_style",
+      "krippendorff_alpha_ordinal": 0.841832899353135,
+      "rating_count": 1500,
+      "mean": 4.202,
+      "std": 1.1563719124918246
+    },
+    {
+      "task": "语境理解",
+      "dimension": "hallucination_severity",
+      "krippendorff_alpha_ordinal": 0.4078698092191899,
+      "rating_count": 1500,
+      "mean": 0.11266666666666666,
+      "std": 0.36511124636502534
+    },
+    {
+      "task": "释义生成",
+      "dimension": "semantic_correctness",
+      "krippendorff_alpha_ordinal": 0.5097064144301016,
+      "rating_count": 1500,
+      "mean": 3.574,
+      "std": 1.031757723499078
+    },
+    {
+      "task": "释义生成",
+      "dimension": "completeness",
+      "krippendorff_alpha_ordinal": 0.6126437231463124,
+      "rating_count": 1500,
+      "mean": 3.3626666666666667,
+      "std": 1.1011234666870418
+    },
+    {
+      "task": "释义生成",
+      "dimension": "conciseness",
+      "krippendorff_alpha_ordinal": 0.5916390597936468,
+      "rating_count": 1500,
+      "mean": 3.6073333333333335,
+      "std": 1.1499911110767576
+    },
+    {
+      "task": "释义生成",
+      "dimension": "contextual_appropriateness",
+      "krippendorff_alpha_ordinal": 0.4523473362583875,
+      "rating_count": 1500,
+      "mean": 3.646,
+      "std": 1.0981882048780771
+    },
+    {
+      "task": "释义生成",
+      "dimension": "lexicographical_style",
+      "krippendorff_alpha_ordinal": 0.5541941946036442,
+      "rating_count": 1500,
+      "mean": 3.66,
+      "std": 1.2117755567760888
+    },
+    {
+      "task": "释义生成",
+      "dimension": "hallucination_severity",
+      "krippendorff_alpha_ordinal": 0.24878712360575672,
+      "rating_count": 1500,
+      "mean": 0.47333333333333333,
+      "std": 0.6642957841872015
+    }
+  ],
+  "correlations": [
+    {
+      "group": "合并",
+      "human_metric": "human_semantic_composite",
+      "automatic_metric": "rouge_avg_percent",
+      "n": 1000,
+      "spearman_rho": 0.39385599555491785,
+      "p_value": 1.8821809333486045e-38,
+      "ci95_low": 0.33849049307409196,
+      "ci95_high": 0.4481181370845001,
+      "bootstrap_iterations": 10000
+    },
+    {
+      "group": "合并",
+      "human_metric": "human_semantic_composite",
+      "automatic_metric": "sbert_similarity",
+      "n": 1000,
+      "spearman_rho": 0.49745978716397904,
+      "p_value": 1.2321547009431902e-63,
+      "ci95_low": 0.4473079672553004,
+      "ci95_high": 0.5451952758421434,
+      "bootstrap_iterations": 10000
+    },
+    {
+      "group": "合并",
+      "human_metric": "human_overall_quality",
+      "automatic_metric": "rouge_avg_percent",
+      "n": 1000,
+      "spearman_rho": 0.38822246193807547,
+      "p_value": 2.5586818782644704e-37,
+      "ci95_low": 0.33241701786595684,
+      "ci95_high": 0.44246080351967243,
+      "bootstrap_iterations": 10000
+    },
+    {
+      "group": "合并",
+      "human_metric": "human_overall_quality",
+      "automatic_metric": "sbert_similarity",
+      "n": 1000,
+      "spearman_rho": 0.4738028678414665,
+      "p_value": 4.26118010668427e-57,
+      "ci95_low": 0.42145086128780745,
+      "ci95_high": 0.5244926224649391,
+      "bootstrap_iterations": 10000
+    },
+    {
+      "group": "合并",
+      "human_metric": "mean_hallucination_severity",
+      "automatic_metric": "rouge_avg_percent",
+      "n": 1000,
+      "spearman_rho": 0.01639180309632824,
+      "p_value": 0.604639130900329,
+      "ci95_low": -0.04545571763900375,
+      "ci95_high": 0.07850176883707477,
+      "bootstrap_iterations": 10000
+    },
+    {
+      "group": "合并",
+      "human_metric": "mean_hallucination_severity",
+      "automatic_metric": "sbert_similarity",
+      "n": 1000,
+      "spearman_rho": -0.08134666373972345,
+      "p_value": 0.01006884672182993,
+      "ci95_low": -0.14240826949646393,
+      "ci95_high": -0.0212380546290725,
+      "bootstrap_iterations": 10000
+    },
+    {
+      "group": "语境理解",
+      "human_metric": "human_semantic_composite",
+      "automatic_metric": "rouge_avg_percent",
+      "n": 500,
+      "spearman_rho": 0.4820392019907479,
+      "p_value": 1.8671978667943957e-30,
+      "ci95_low": 0.40735736691416313,
+      "ci95_high": 0.5517605663494652,
+      "bootstrap_iterations": 10000
+    },
+    {
+      "group": "语境理解",
+      "human_metric": "human_semantic_composite",
+      "automatic_metric": "sbert_similarity",
+      "n": 500,
+      "spearman_rho": 0.5869785420967459,
+      "p_value": 1.2653828058747016e-47,
+      "ci95_low": 0.5217829238973974,
+      "ci95_high": 0.6459478046654975,
+      "bootstrap_iterations": 10000
+    },
+    {
+      "group": "语境理解",
+      "human_metric": "human_overall_quality",
+      "automatic_metric": "rouge_avg_percent",
+      "n": 500,
+      "spearman_rho": 0.5487247398258835,
+      "p_value": 1.178376330932898e-40,
+      "ci95_low": 0.47892074777396626,
+      "ci95_high": 0.6124199176116766,
+      "bootstrap_iterations": 10000
+    },
+    {
+      "group": "语境理解",
+      "human_metric": "human_overall_quality",
+      "automatic_metric": "sbert_similarity",
+      "n": 500,
+      "spearman_rho": 0.5718105387089372,
+      "p_value": 9.442602269241475e-45,
+      "ci95_low": 0.5041006185567054,
+      "ci95_high": 0.6328696042343414,
+      "bootstrap_iterations": 10000
+    },
+    {
+      "group": "语境理解",
+      "human_metric": "mean_hallucination_severity",
+      "automatic_metric": "rouge_avg_percent",
+      "n": 500,
+      "spearman_rho": -0.2265466950427535,
+      "p_value": 3.0590415438838275e-07,
+      "ci95_low": -0.30080943582848707,
+      "ci95_high": -0.1481480555238781,
+      "bootstrap_iterations": 10000
+    },
+    {
+      "group": "语境理解",
+      "human_metric": "mean_hallucination_severity",
+      "automatic_metric": "sbert_similarity",
+      "n": 500,
+      "spearman_rho": -0.11860553379256039,
+      "p_value": 0.007934621590198193,
+      "ci95_low": -0.20704674286034364,
+      "ci95_high": -0.02850298153435461,
+      "bootstrap_iterations": 10000
+    },
+    {
+      "group": "释义生成",
+      "human_metric": "human_semantic_composite",
+      "automatic_metric": "rouge_avg_percent",
+      "n": 500,
+      "spearman_rho": 0.38382751896409023,
+      "p_value": 5.362437897655701e-19,
+      "ci95_low": 0.301730131323596,
+      "ci95_high": 0.4610605965571194,
+      "bootstrap_iterations": 10000
+    },
+    {
+      "group": "释义生成",
+      "human_metric": "human_semantic_composite",
+      "automatic_metric": "sbert_similarity",
+      "n": 500,
+      "spearman_rho": 0.37943878100383577,
+      "p_value": 1.4395426539109465e-18,
+      "ci95_low": 0.29907045494887774,
+      "ci95_high": 0.4543723064892909,
+      "bootstrap_iterations": 10000
+    },
+    {
+      "group": "释义生成",
+      "human_metric": "human_overall_quality",
+      "automatic_metric": "rouge_avg_percent",
+      "n": 500,
+      "spearman_rho": 0.3807393384000331,
+      "p_value": 1.0759974988875865e-18,
+      "ci95_low": 0.29931692562179507,
+      "ci95_high": 0.457748092515534,
+      "bootstrap_iterations": 10000
+    },
+    {
+      "group": "释义生成",
+      "human_metric": "human_overall_quality",
+      "automatic_metric": "sbert_similarity",
+      "n": 500,
+      "spearman_rho": 0.4004581016241114,
+      "p_value": 1.1077468645048511e-20,
+      "ci95_low": 0.3193102972423513,
+      "ci95_high": 0.47680542344858895,
+      "bootstrap_iterations": 10000
+    },
+    {
+      "group": "释义生成",
+      "human_metric": "mean_hallucination_severity",
+      "automatic_metric": "rouge_avg_percent",
+      "n": 500,
+      "spearman_rho": -0.0911286580095342,
+      "p_value": 0.04166624708803381,
+      "ci95_low": -0.17748441621616257,
+      "ci95_high": -0.003782912648730673,
+      "bootstrap_iterations": 10000
+    },
+    {
+      "group": "释义生成",
+      "human_metric": "mean_hallucination_severity",
+      "automatic_metric": "sbert_similarity",
+      "n": 500,
+      "spearman_rho": -0.13268989820485927,
+      "p_value": 0.002951300290106958,
+      "ci95_low": -0.21916475666526972,
+      "ci95_high": -0.04707395640573876,
+      "bootstrap_iterations": 10000
+    }
+  ],
+  "model_summary": [
+    {
+      "task": "语境理解",
+      "model": "DeepSeek-V4-Pro",
+      "model_role": "新增最新强模型",
+      "n": 100,
+      "human_semantic_mean": 3.632222222222222,
+      "human_semantic_std": 1.159895163419288,
+      "human_overall_mean": 4.121333333333333,
+      "human_overall_std": 0.7148196353704277,
+      "hallucination_mean": 0.013333333333333332,
+      "rouge_avg_percent": 15.77564589069505,
+      "sbert_similarity_percent": 68.17185559868813
+    },
+    {
+      "task": "语境理解",
+      "model": "GPT-4o",
+      "model_role": "原论文闭源强模型",
+      "n": 100,
+      "human_semantic_mean": 3.2022222222222223,
+      "human_semantic_std": 1.1645356198401762,
+      "human_overall_mean": 3.5553333333333335,
+      "human_overall_std": 0.7246795460370359,
+      "hallucination_mean": 0.06,
+      "rouge_avg_percent": 8.21206027817484,
+      "sbert_similarity_percent": 54.43553139269352
+    },
+    {
+      "task": "语境理解",
+      "model": "Qwen3-8B",
+      "model_role": "开源通用模型/微调基座",
+      "n": 100,
+      "human_semantic_mean": 3.342222222222222,
+      "human_semantic_std": 1.1585090460918046,
+      "human_overall_mean": 2.8986666666666667,
+      "human_overall_std": 0.7342709157918335,
+      "hallucination_mean": 0.4766666666666666,
+      "rouge_avg_percent": 8.95336984071588,
+      "sbert_similarity_percent": 62.916389122605324
+    },
+    {
+      "task": "语境理解",
+      "model": "Qwen3-8B-sft",
+      "model_role": "辞书任务微调模型",
+      "n": 100,
+      "human_semantic_mean": 3.24,
+      "human_semantic_std": 1.4242797616712009,
+      "human_overall_mean": 3.941333333333333,
+      "human_overall_std": 0.8535562208912909,
+      "hallucination_mean": 0.0,
+      "rouge_avg_percent": 34.6112795515321,
+      "sbert_similarity_percent": 65.32603232562542
+    },
+    {
+      "task": "语境理解",
+      "model": "qwen3.7-max",
+      "model_role": "闭源强模型",
+      "n": 100,
+      "human_semantic_mean": 3.7155555555555555,
+      "human_semantic_std": 1.143561687594217,
+      "human_overall_mean": 4.204666666666666,
+      "human_overall_std": 0.7028990760494078,
+      "hallucination_mean": 0.013333333333333332,
+      "rouge_avg_percent": 17.984530550394567,
+      "sbert_similarity_percent": 71.04005029797554
+    },
+    {
+      "task": "释义生成",
+      "model": "DeepSeek-V4-Pro",
+      "model_role": "新增最新强模型",
+      "n": 100,
+      "human_semantic_mean": 4.05,
+      "human_semantic_std": 0.5690310152322949,
+      "human_overall_mean": 4.045333333333334,
+      "human_overall_std": 0.4251932893794696,
+      "hallucination_mean": 0.21333333333333332,
+      "rouge_avg_percent": 31.25216001787395,
+      "sbert_similarity_percent": 71.85477921366692
+    },
+    {
+      "task": "释义生成",
+      "model": "GPT-4o",
+      "model_role": "原论文闭源强模型",
+      "n": 100,
+      "human_semantic_mean": 3.4611111111111112,
+      "human_semantic_std": 0.6720844670606497,
+      "human_overall_mean": 3.776,
+      "human_overall_std": 0.4844717627363734,
+      "hallucination_mean": 0.32999999999999996,
+      "rouge_avg_percent": 22.15156112975093,
+      "sbert_similarity_percent": 64.8309286236763
+    },
+    {
+      "task": "释义生成",
+      "model": "Qwen3-8B",
+      "model_role": "开源通用模型/微调基座",
+      "n": 100,
+      "human_semantic_mean": 3.078888888888889,
+      "human_semantic_std": 0.7704888619699528,
+      "human_overall_mean": 3.1333333333333333,
+      "human_overall_std": 0.5488573990067406,
+      "hallucination_mean": 0.77,
+      "rouge_avg_percent": 19.743895891083213,
+      "sbert_similarity_percent": 62.222023993730545
+    },
+    {
+      "task": "释义生成",
+      "model": "Qwen3-8B-sft",
+      "model_role": "辞书任务微调模型",
+      "n": 100,
+      "human_semantic_mean": 3.02,
+      "human_semantic_std": 0.8530815600797781,
+      "human_overall_mean": 2.892,
+      "human_overall_std": 0.7894177882746527,
+      "hallucination_mean": 0.6466666666666666,
+      "rouge_avg_percent": 25.916245419174228,
+      "sbert_similarity_percent": 64.54744602739811
+    },
+    {
+      "task": "释义生成",
+      "model": "qwen3.7-max",
+      "model_role": "闭源强模型",
+      "n": 100,
+      "human_semantic_mean": 4.027777777777778,
+      "human_semantic_std": 0.5432810699699138,
+      "human_overall_mean": 4.003333333333333,
+      "human_overall_std": 0.36810324638611924,
+      "hallucination_mean": 0.4066666666666666,
+      "rouge_avg_percent": 28.641277847631635,
+      "sbert_similarity_percent": 70.11869716644287
+    }
+  ]
+}

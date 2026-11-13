@@ -1,0 +1,14 @@
+﻿panel,configuration,accuracy_percent,rouge_avg_percent,sbert_percent
+structured,Radical open-book,97.5,,
+structured,Pinyin open-book,91.5,,
+structured,Fanqie open-book,91.5,,
+structured,POS-B1 Majority,50.0,,
+structured,POS-B2 Contextual BM25,60.0,,
+context,C0 Closed-book,,4.707995333333334,51.1357156857848
+context,C1 Direct BM25,,29.730763,63.981104
+context,C2 BM25-based RAG,,28.550861,68.851826
+definition,D0 Closed-book,,2.448156333333333,37.1299753375351
+definition,D1 Direct BM25,,6.659802,53.183317
+definition,D2 Example-only,,13.414516,62.000877
+definition,D3 Definition+POS,,12.075753,56.279921
+definition,D4 Full evidence,,10.508623,57.710952

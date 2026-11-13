@@ -1,0 +1,9 @@
+﻿模型名,任务名,评测模式,准确率,准确率（%）
+Qwen3-sft,部首识别,0-shot,0.675,67.5
+Qwen3-sft,部首识别,5-shot,0.605,60.5
+Qwen3-sft,词性识别,0-shot,0.71,71
+Qwen3-sft,词性识别,5-shot,0.69,69
+Qwen3-sft,反切注音,0-shot,0.36,36
+Qwen3-sft,反切注音,5-shot,0.37,37
+Qwen3-sft,拼音注音,0-shot,0.92,92
+Qwen3-sft,拼音注音,5-shot,0.915,91.5
